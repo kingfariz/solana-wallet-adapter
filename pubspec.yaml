@@ -2,33 +2,37 @@ name: solana_wallet_adapter
 description: Dart implementation of Solana's Mobile Wallet Adapter Specification.
 repository: https://github.com/merigo-labs/solana-wallet-adapter
 issue_tracker: https://github.com/merigo-labs/solana-wallet-adapter/issues/new/choose
-# NOTE: "Prefer living with a less-clean platform API than making a breaking change." 
+# NOTE: "Prefer living with a less-clean platform API than making a breaking change."
 # https://flutter.dev/go/platform-interface-breaking-changes
 version: 0.1.5
 
 environment:
-  sdk: '>=3.0.3 <4.0.0'
-  flutter: '>=3.0.0'
+  sdk: ">=3.0.3 <4.0.0"
+  flutter: ">=3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  
+
   async: ^2.10.0
   shared_preferences: ^2.1.0
   synchronized: ^3.1.0
 
-  solana_common: ^0.1.0+1
+  solana_common:
+    ^0.1.0+1
     # path: ../solana_common
-  solana_jsonrpc: ^0.0.1
+  solana_jsonrpc:
+    ^0.0.1
     # path: ../solana_jsonrpc
-  solana_wallet_adapter_android: ^0.0.6
-    # path: ../solana_wallet_adapter_android
-  solana_wallet_adapter_ios: ^0.0.6
-    # path: ../solana_wallet_adapter_ios
-  solana_wallet_adapter_platform_interface: ^0.0.6
+  # solana_wallet_adapter_android: ^0.0.6
+  #   # path: ../solana_wallet_adapter_android
+  # solana_wallet_adapter_ios: ^0.0.6
+  #   # path: ../solana_wallet_adapter_ios
+  solana_wallet_adapter_platform_interface:
+    ^0.0.6
     # path: ../solana_wallet_adapter_platform_interface
-  solana_wallet_adapter_web: ^0.0.9
+  solana_wallet_adapter_web:
+    ^0.0.9
     # path: ../solana_wallet_adapter_web
 
 dev_dependencies:
